@@ -1,13 +1,10 @@
-function getRandomName()
-{
-    var names = [
-        'Act your age, mama (not your shoe size)',
-        'Dream if you can a courtyard; an ocean of violets in bloom; animals strike curious poses; They feel the heat; The heat between me and you',
-        'Girl, you got an ass like I've never seen; And the ride, I say the ride is so smooth; You must be a limosine',
-        'I just want your creamy thighs',
+var sentences = 
+    [
+      "Act your age, mama (not your shoe size)",
+      "Girl, you got an ass like I never seen",
+      "I just want your creamy thighs"
+      // Add more Prince lyrics
     ];
 
-    return names[Math.floor(Math.random() * names.length)];
-}
-
-document.write( getRandomName() );
+var index = Math.floor(Math.random() * sentences.length);
+alert(sentences[index]); // This will be your random value
